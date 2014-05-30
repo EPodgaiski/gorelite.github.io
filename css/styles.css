@@ -104,14 +104,19 @@ nav{max-width:500px; margin:0 auto; text-align:center;}
 }
 	.info_box_list li + li{border-top:1px solid #000;}
 		.info_box_list li + li:before{content:''; position:absolute; top:0; right:0; border-width:15px 0 15px 15px; border-style:solid; border-color:#000 transparent transparent;}
-	.info_box_list a{display:inline-block; font-weight:bold;}
-	.info_box_list a:first-child{float:left; margin:2px 15px 5px 0;}
-	.info_box_list a:first-letter{text-transform:uppercase; color:#666;
+		.info_box_list li > a{float:left; margin:2px 15px 5px 0;}
+
+	.title{margin-left:123px; line-height:20px;}
+		.title a{display:inline-block; vertical-align:top; font-weight:bold;}
+			.title a:first-letter{text-transform:uppercase; color:#666;
 		-webkit-transition:color .15s;
 		transition:border-color .15s;
 	}
-		.info_box_list a:first-child:hover + .title a{color:#F60;}
-		.title{overflow:hidden;}
+			.info_box_list li > a:hover + .title a{color:#F60;}
+
+.git_lnk{position:relative; display:inline-block; top:-3px; width:20px; height:20px; background:url(../images/github_icon.png) 0 0 no-repeat;}
+	.git_lnk:hover{background-position:0 -20px;}
+	a + .git_lnk{margin-left:10px;}
 
 	.temp{width:106px; height:106px; border:1px solid #666; background:#fff url(../images/temp.png) 50% 0 no-repeat; 
 		-webkit-transition:all .5s;
